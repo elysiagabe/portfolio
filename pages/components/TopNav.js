@@ -2,20 +2,18 @@ const TopNav = () => {
     return (
         <section className="top-nav">
             <div className="title">
-            <a href="/" >
-                Elysia Gabe
-            </a>
+                <a href="/" >Elysia Gabe</a>
             </div>
             <nav className="nav-links">
-                <a href="#">About</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#" className="animoBorderLeftRight">About</a>
+                <a href="#" className="animoBorderLeftRight">Projects</a>
+                <a href="#" className="animoBorderLeftRight">Contact</a>
             </nav>
 
             <style jsx>{`
                 .top-nav {
                     display: flex;
-                    align-items: flex-end;
+                    align-items: baseline;
                     background-color: #F6F3EE;
                     padding: 28px 2.5% 48px;
                 }
@@ -28,6 +26,7 @@ const TopNav = () => {
                     width: 50%;
                     letter-spacing: 1px;
                     line-height: .8;
+                    padding-bottom: 8px;
                 }
 
                 .title a {
@@ -45,14 +44,34 @@ const TopNav = () => {
                     text-transform: uppercase;
                     font-size: 1.6rem;
                     color: #333;
-                    padding-left: 32px;
+                    margin-left: 32px;
+                    padding: 0 2px 8px;
                     text-decoration: none;
-                    // border: 1px solid red;
                     line-height: 1;
                 }
 
-                .nav-links a:hover {
-                    color: #00857D;
+                .animoBorderLeftRight {
+                    display:inline-block;
+                    position:relative;
+                    cursor:pointer
+                }
+
+                .animoBorderLeftRight::after {
+                    content:'';
+                    position:absolute;
+                    width:100%;
+                    transform:scaleX(0);
+                    height:2px;
+                    bottom:0;
+                    left:0;
+                    background-color:#00857D;
+                    transform-origin:bottom right;
+                    transition:transform .4s cubic-bezier(.86,0,.07,1)
+                }
+
+                .animoBorderLeftRight:hover::after {
+                    transform:scaleX(1);
+                    transform-origin:bottom left
                 }
             `}</style>
         </section>

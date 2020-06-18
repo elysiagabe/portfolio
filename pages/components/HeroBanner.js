@@ -2,11 +2,11 @@ const HeroBanner = () => {
     return (
         <section className="hero-banner">
             <section className="hero-content">
-            <div className="hero-image">Placeholder</div>
-            <div className="hero-blurb">
-                <h1>Aloha, I'm Elysia</h1>
-                <p>A full-stack web developer based in Oakland with roots in Hawaiʻi. I’m passionate about building impactful, scalable and accessible tech solutions for social good. </p>
-            </div>
+                <div className="hero-image">Placeholder</div>
+                <div className="hero-blurb">
+                    <h1>Aloha, I'm Elysia</h1>
+                    <p>A full-stack web developer based in Oakland with roots in Hawaiʻi. I’m passionate about building impactful, scalable and accessible tech solutions for social good. </p>
+                </div>
             </section>
             <img src="/bottom_wave.png" className="bottom-wave" />
 
