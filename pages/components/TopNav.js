@@ -5,8 +5,8 @@ const TopNav = () => {
                 <a href="/" >Elysia Gabe</a>
             </div>
             <nav className="nav-links">
-                <a href="#" className="animoBorderLeftRight">About</a>
-                <a href="#" className="animoBorderLeftRight">Projects</a>
+                <a href="#projects" className="animoBorderLeftRight">Projects</a>
+                <a href="#about" className="animoBorderLeftRight">About</a>
                 <a href="#" className="animoBorderLeftRight">Contact</a>
             </nav>
 
@@ -38,6 +38,7 @@ const TopNav = () => {
                     display: flex;
                     justify-content: flex-end;
                     width: 50%;
+                    z-index: 10;
                 }
 
                 .nav-links a {
