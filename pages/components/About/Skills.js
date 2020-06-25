@@ -15,7 +15,7 @@ const Skills = () => {
                             <ul>
                                 {skill.skills.map(s => {
                                     return (
-                                        <li>{s}</li>
+                                        <li key={s}>{s}</li>
                                     )
                                 })}
                             </ul>

@@ -1,8 +1,6 @@
 import projectInfo from '../../data/projectInfo';
 
 const ProjectCard = () => {
-
-    console.log({projectInfo})
     return (
         <section>
             <h3>MySchool</h3>

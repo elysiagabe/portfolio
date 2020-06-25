@@ -17,22 +17,16 @@ const HeroBanner = () => {
                         <a href="#projects">Check out my work</a>
                     </div>
                 </div>
-                <div className="yellow"><img src="/yellow_ellipse.svg" /></div>
+                <div className="yellow"><img src="/yellow_hero_blob.svg" /></div>
             </section>
             <img src="/bottom_wave.png" className="bottom-wave" />
 
             <style jsx>{`
                 .yellow {
                     position: absolute;
-                    right: -30vw;
-                    top: -40px;
+                    right: 0vw;
+                    top: -20px;
                     z-index: 0;
-                    transform: rotate(-15deg);
-                }
-                
-                .yellow img {
-                    width: 70vw;
-                    height: 90vh;
                 }
 
                 .hero-banner {
@@ -52,6 +46,7 @@ const HeroBanner = () => {
         
                 .hero-image {
                     width: 45%;
+                    z-index: 5;
                 }
 
                 .hero-image img {
