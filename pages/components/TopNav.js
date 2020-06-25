@@ -7,7 +7,7 @@ const TopNav = () => {
             <nav className="nav-links">
                 <a href="#projects" className="animoBorderLeftRight">Projects</a>
                 <a href="#about" className="animoBorderLeftRight">About</a>
-                <a href="#" className="animoBorderLeftRight">Contact</a>
+                <a href="#contact" className="animoBorderLeftRight">Contact</a>
             </nav>
 
             <style jsx>{`
@@ -15,7 +15,8 @@ const TopNav = () => {
                     display: flex;
                     align-items: baseline;
                     background-color: #F6F3EE;
-                    padding: 28px 2.5% 48px;
+                    // padding: 28px 2.5% 48px;
+                    padding: 28px 2.5% 0;
                 }
 
                 .title {

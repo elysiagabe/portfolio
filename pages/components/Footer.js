@@ -4,7 +4,7 @@ const Footer = () => {
             Designed &amp; Developed by Elysia Gabe
             <style jsx>{`
                 footer {
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
                     text-align: center;
                     margin-bottom: 32px;
                 }

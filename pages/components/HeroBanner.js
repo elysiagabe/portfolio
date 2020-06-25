@@ -33,6 +33,8 @@ const HeroBanner = () => {
                     height: 70vh;
                     background-color: #F6F3EE;
                     position: relative;
+                    display: flex;
+                    align-items: center;
                 }
         
                 .hero-content {
