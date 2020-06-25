@@ -59,7 +59,7 @@ const ContactForm = () => {
             <style jsx>{`
                 form {
                     width: 70%;
-                    margin: 20px auto;
+                    margin: 20px auto 84px;
                 }
 
                 input, textarea {
@@ -114,7 +114,7 @@ const ContactForm = () => {
 
                 button:hover {
                     cursor: pointer;
-                    background-color: #005954;
+                    background-color: #006660;
                 }
             `}</style>
         </form>

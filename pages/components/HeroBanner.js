@@ -19,7 +19,7 @@ const HeroBanner = () => {
                 </div>
                 <div className="yellow"><img src="/yellow_hero_blob.svg" /></div>
             </section>
-            <img src="/bottom_wave.png" className="bottom-wave" />
+            <img src="/hero_banner_wave.png" className="bottom-wave" />
 
             <style jsx>{`
                 .yellow {
