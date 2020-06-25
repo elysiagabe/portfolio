@@ -31,22 +31,21 @@ const ContactForm = () => {
             method="POST"
         >
             {status === "SUCCESS"
-            ? <p>Thanks for reaching out! I'll get back to you within 1 business day.</p>
+            ? <p>Thanks for reaching out! You'll hear from me within 1 business day. I look forward to chatting!</p>
             : 
                 <>
-                    <label htmlFor="name">Name</label>
-                    <input type="text" name="name" placeholder="Your name" />
+                    <label htmlFor="name">Name *</label>
+                    <input type="text" name="name" required />
 
-                    <label htmlFor="_replyto">Email</label>
-                    <input type="email" name="_replyto" placeholder="Your email" />
-
-                    <label htmlFor="_subject">Subject</label>
-                    <input type="text" name="_subject" placeholder="What's this about?" />
+                    <label htmlFor="_replyto">Email *</label>
+                    <input type="email" name="_replyto" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
 
                     <label htmlFor="message">Message</label>
-                    <input type="textarea" name="message" placeholder="Say hello..." />
+                    <input type="textarea" name="message" required />
 
                     <input type="text" name="_gotcha" style={{ display: "none" }} />
+
+                    <input type="hidden" name="_subject" value="New Message!" />
 
                     <button type="submit">Submit</button>
                 </>
