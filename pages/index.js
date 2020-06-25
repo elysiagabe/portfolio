@@ -3,6 +3,7 @@ import TopNav from './components/TopNav'
 import HeroBanner from './components/HeroBanner'
 import Projects from './components/Projects/Projects'
 import About from './components/About/About'
+import ContactForm from './components/Contact/ContactForm'
 import Footer from './components/Footer'
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
         <About />
 
         {/* CONTACT: Email, GitHub, LinkedIn, Contact Form */}
+        <ContactForm />
         
       </main>
 

@@ -4,7 +4,7 @@ const Skills = () => {
     return (
         <section className="skills">
             <h3>Skillset</h3>
-            <p>(And if it's not listed here, I'm a quick learner! 😉)</p>
+            <p>(And if it's not listed here, I'm a fast learner! 😉)</p>
 
             <div className="skills-container">
                 {skills.map(skill => {
@@ -34,7 +34,7 @@ const Skills = () => {
 
                 .skills p {
                     margin: 0;
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
                     text-align: center;
                 }
 
