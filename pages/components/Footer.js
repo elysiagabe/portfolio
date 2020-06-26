@@ -22,14 +22,14 @@ const Footer = () => {
                     text-align: center;
                     width: 100vw;
                     background-image: url("/footer_wave.png");
-                    height: 300px;
+                    height: 270px;
                 }
 
                 .footer-content-container {
                     display: flex;
                     // justify-content: space-between;
                     align-items: center;
-                    padding: 116px 64px 20px;
+                    padding: 80px 64px 20px;
                 }
 
                 .footer-logo {
@@ -84,7 +84,7 @@ const Footer = () => {
 
                 .copyright {
                     position: relative;
-                    bottom: 8px;
+                    bottom: -10px;
                     text-align: center;
                     display: block;
                     width: 100%;

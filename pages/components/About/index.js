@@ -1,9 +1,11 @@
+import Summary from './Summary';
 import Skills from './Skills';
 
 const About = () => {
     return (
         <section className="about-container" id="about">
             <h2>About Me</h2>
+            <Summary />
             <Skills />
 
             <style jsx>{`
