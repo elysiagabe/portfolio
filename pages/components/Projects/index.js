@@ -1,4 +1,4 @@
-import projectInfo from '../../data/projectInfo'
+import projectInfo from '../../../data/projectInfo'
 import ProjectCard from './ProjectCard'
 
 const Projects = () => {
@@ -8,7 +8,9 @@ const Projects = () => {
             <ProjectCard />
             <style jsx>{`
                 .project-container {
-                    margin-top: 200px;
+                    max-width: 1400px;
+                    margin: 200px auto 0;
+                    // border: 1px solid pink;
                 }
 
                 .project-container h2 {

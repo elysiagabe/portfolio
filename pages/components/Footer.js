@@ -7,7 +7,7 @@ const Footer = () => {
                     <p className="name">Elysia Gabe</p>
                     <p className="info">Oakland, CA &nbsp; | &nbsp;  <a href="mailto:elysiagabe@gmail.com">elysiagabe@gmail.com</a></p>
                     <div>
-                        <a href="https://www.linkedin.com/in/elysia-gabe-a173bbb1/" target="_blank"><img className="social-icon" src="/linkedin.svg" /></a>
+                        <a href="https://www.linkedin.com/in/elysia-gabe/" target="_blank"><img className="social-icon" src="/linkedin.svg" /></a>
                         <a href="https://github.com/elysiagabe" target="_blank"><img className="social-icon" src="/github.svg" /></a>
                         <a href="https://dribbble.com/elysiagabe" target="_blank"><img className="social-icon" src="/dribbble.svg" /></a>
                     </div>
@@ -35,8 +35,8 @@ const Footer = () => {
                 .footer-logo {
                     height: 100px;
                     margin-right: 32px;
-                    border-right: 1px solid #333;
-                    padding-right: 32px;
+                    // border-right: 1px solid #333;
+                    padding-right: 16px;
                 }
 
                 .contact-info {
@@ -56,16 +56,17 @@ const Footer = () => {
                 }
 
                 .name {
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                     font-weight: bold;
                     text-transform: uppercase;
                     color: #00857D;
                     margin: 0;
                     margin-bottom: 4px;
+                    margin-top: 8px;ß
                 }
 
                 .info {
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
                     margin: 0;
                     margin-bottom: 8px;
                 }
@@ -73,6 +74,7 @@ const Footer = () => {
                 .social-icon {
                     width: 40px;
                     margin-right: 12px;
+                    margin-top: 6px;
                     transition: .2s;
                 }
 
@@ -81,8 +83,8 @@ const Footer = () => {
                 }
 
                 .copyright {
-                    position: fixed;
-                    bottom: 12px;
+                    position: relative;
+                    bottom: 8px;
                     text-align: center;
                     display: block;
                     width: 100%;

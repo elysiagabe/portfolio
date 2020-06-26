@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import TopNav from './components/TopNav'
 import HeroBanner from './components/HeroBanner'
-import Projects from './components/Projects/Projects'
-import About from './components/About/About'
-import Contact from './components/Contact/Contact'
+import Projects from './components/Projects'
+import About from './components/About'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function Home() {

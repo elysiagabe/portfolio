@@ -47,7 +47,7 @@ const Skills = () => {
 
                 .skill-column {
                     font-size: 1.4rem;
-                    width: 16%;
+                    width: 18%;
                     // border: 1px solid lavender;
                     padding: 28px;
                 }

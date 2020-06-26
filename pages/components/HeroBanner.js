@@ -40,7 +40,7 @@ const HeroBanner = () => {
                 .hero-content {
                     display: flex;
                     align-items: center;
-                    justify-content: space-evenly;
+                    justify-content: space-around;
                     padding: 28px 2.5%;
                     max-width: 1400px;
                     margin: 0 auto;
