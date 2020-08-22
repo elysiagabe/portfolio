@@ -1,3 +1,5 @@
+import ReactGA from 'react-ga'
+// Components
 import Head from 'next/head'
 import TopNav from './components/TopNav'
 import HeroBanner from './components/HeroBanner'
@@ -7,6 +9,12 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function Home() {
+  // Google Analytics
+  React.useEffect(() => {
+    ReactGA.initialize("UA-176053030-1");
+    ReactGA.event({ category: "Portfolio", action: "Portfolio loaded"});
+  }, [])
+
   return (
     <div className="container">
       <Head>
