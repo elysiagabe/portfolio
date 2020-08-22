@@ -60,8 +60,9 @@ const HeroBanner = () => {
                     font-size: 1.8rem;
                     padding-left: 48px;
                     z-index: 10;
+                    line-height: 1.6;
                 }
-        
+
                 .hero-blurb h1 {
                     font-size: 4.8rem;
                     font-family: 'Crimson Text', serif;

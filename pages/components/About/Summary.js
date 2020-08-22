@@ -13,18 +13,17 @@ const Summary = () => {
                 <br/>
                 When I’m not on the computer, I love spending time with family and friends, reading, cooking up hearty and delicious vegetarian/vegan meals, taking long nature walks and trips home to Hawaiʻi. 
             </p>
-            <p>Want to learn more about my background and prior experience? <a href="#">Download my resume.</a> </p>
+            <p>Want to learn more about my background and prior experience? <a href="/elysia_gabe_resume.pdf" target="_blank">View my resume.</a> </p>
 
             <style jsx>{`
                 .about-summary {
-                    width: 60%;
+                    width: 70%;
                     margin: 0 auto;
-                    max-width: 1400px;
                     margin-bottom: 56px;
                 }
 
                 .about-summary p {
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                 }
 
                 .about-summary a {

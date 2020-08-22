@@ -2,7 +2,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer-content-container">
-                <img className="footer-logo" src="/EG_logo.png" alt="Capital letters E and G" />
+
                 <div className="contact-info">
                     <p className="name">Elysia Gabe</p>
                     <p className="info">Oakland, CA &nbsp; | &nbsp;  <a href="mailto:elysiagabe@gmail.com">elysiagabe@gmail.com</a></p>
@@ -30,13 +30,6 @@ const Footer = () => {
                     // justify-content: space-between;
                     align-items: center;
                     padding: 80px 64px 20px;
-                }
-
-                .footer-logo {
-                    height: 100px;
-                    margin-right: 32px;
-                    // border-right: 1px solid #333;
-                    padding-right: 16px;
                 }
 
                 .contact-info {
@@ -72,9 +65,8 @@ const Footer = () => {
                 }
 
                 .social-icon {
-                    width: 40px;
-                    margin-right: 12px;
-                    margin-top: 6px;
+                    width: 30px;
+                    margin-right: 8px;
                     transition: .2s;
                 }
 
