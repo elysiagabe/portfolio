@@ -1,3 +1,5 @@
+import ReactGA from 'react-ga'
+
 const Footer = () => {
     return (
         <footer>
@@ -7,9 +9,27 @@ const Footer = () => {
                     <p className="name">Elysia Gabe</p>
                     <p className="info">Oakland, CA &nbsp; | &nbsp;  <a href="mailto:elysiagabe@gmail.com">elysiagabe@gmail.com</a></p>
                     <div>
-                        <a href="https://www.linkedin.com/in/elysia-gabe/" target="_blank"><img className="social-icon" src="/linkedin.svg" /></a>
-                        <a href="https://github.com/elysiagabe" target="_blank"><img className="social-icon" src="/github.svg" /></a>
-                        <a href="https://dribbble.com/elysiagabe" target="_blank"><img className="social-icon" src="/dribbble.svg" /></a>
+                        <ReactGA.OutboundLink
+                            eventLabel="LinkedIn"
+                            to="https://www.linkedin.com/in/elysia-gabe/"
+                            target="_blank"
+                        >
+                            <img className="social-icon" src="/linkedin.svg" />
+                        </ReactGA.OutboundLink>
+                        <ReactGA.OutboundLink
+                            eventLabel="GitHub"
+                            to="https://github.com/elysiagabe"
+                            target="_blank"
+                        >
+                            <img className="social-icon" src="/github.svg" />
+                        </ReactGA.OutboundLink>
+                        <ReactGA.OutboundLink
+                            eventLabel="Dribbble"
+                            to="https://dribbble.com/elysiagabe"
+                            target="_blank"
+                        >
+                            <img className="social-icon" src="/dribbble.svg" />
+                        </ReactGA.OutboundLink>
                     </div>
                 </div>
             </div>
