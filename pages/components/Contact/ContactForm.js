@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactGA from 'react-ga';
 
 const ContactForm = () => {
     const [status, setStatus] = useState("");
@@ -16,6 +17,10 @@ const ContactForm = () => {
             if (xhr.status === 200) {
                 form.reset();
                 setStatus("SUCCESS");
+                ReactGA.event({
+                    category: 'Contact',
+                    action: 'Submitted Contact Form'
+                })
             } else {
                 setStatus("ERROR")
             }

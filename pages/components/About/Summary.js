@@ -1,4 +1,13 @@
+import ReactGA from 'react-ga'
+
 const Summary = () => {
+    const viewRes = e => {
+        ReactGA.event({
+            category: 'Resume',
+            action: 'Viewed Resume'
+        })
+    }
+
     return (
         <section className="about-summary">
             <h3>Hey there!</h3>
@@ -13,7 +22,7 @@ const Summary = () => {
                 <br/>
                 When I’m not on the computer, I love spending time with family and friends, reading, cooking up hearty and delicious vegetarian/vegan meals, taking long nature walks and trips home to Hawaiʻi. 
             </p>
-            <p>Want to learn more about my background and prior experience? <a href="/elysia_gabe_resume.pdf" target="_blank">View my resume.</a> </p>
+            <p>Want to learn more about my background and prior experience? <a href="/elysia_gabe_resume.pdf" target="_blank" onClick={viewRes}>View my resume.</a> </p>
 
             <style jsx>{`
                 .about-summary {
