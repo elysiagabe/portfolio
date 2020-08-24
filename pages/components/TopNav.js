@@ -13,9 +13,9 @@ const TopNav = () => {
             <style jsx>{`
                 .top-nav {
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: baseline;
                     background-color: #F6F3EE;
-                    // padding: 28px 2.5% 48px;
                     padding: 28px 2.5% 0;
                 }
 
@@ -24,10 +24,11 @@ const TopNav = () => {
                     font-size: 2.4rem;
                     color: #00857D;
                     font-weight: bold;
-                    width: 50%;
                     letter-spacing: 1px;
                     line-height: .8;
                     padding-bottom: 8px;
+                    width: 100%;
+                    text-align: center;
                 }
 
                 .title a {
@@ -37,19 +38,20 @@ const TopNav = () => {
 
                 .nav-links {
                     display: flex;
-                    justify-content: flex-end;
-                    width: 50%;
                     z-index: 10;
+                    width: 80%;
+                    justify-content: space-between;
+                    margin: 0 auto;
                 }
 
                 .nav-links a {
                     text-transform: uppercase;
                     font-size: 1.6rem;
                     color: #333;
-                    margin-left: 32px;
                     padding: 0 2px 8px;
                     text-decoration: none;
                     line-height: 1;
+                    margin-top: 20px;
                 }
 
                 .animoBorderLeftRight {
@@ -74,6 +76,23 @@ const TopNav = () => {
                 .animoBorderLeftRight:hover::after {
                     transform:scaleX(1);
                     transform-origin:bottom left
+                }
+
+                @media(min-width: 480px) {
+                    .title {
+                        width: 50%;
+                        text-align: left;
+                    }
+
+                    .nav-links {
+                        justify-content: flex-end;
+                        width: 50%;
+                    }
+
+                    .nav-links a {
+                        margin-left: 32px;
+                        margin-top: 0;
+                    }
                 }
             `}</style>
         </section>
