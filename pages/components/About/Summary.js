@@ -26,7 +26,7 @@ const Summary = () => {
 
             <style jsx>{`
                 .about-summary {
-                    width: 70%;
+                    width: 90%;
                     margin: 0 auto;
                     margin-bottom: 56px;
                 }
@@ -38,6 +38,12 @@ const Summary = () => {
                 .about-summary a {
                     font-weight: bold;
                     color: #00857D;
+                }
+
+                @media(min-width: 768px) {
+                    .about-summary {
+                        width: 70%;
+                    }
                 }
             `}</style>
         </section>
