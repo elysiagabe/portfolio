@@ -20,9 +20,23 @@ const Contact = () => {
                 }
 
                 .contact-container p {
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
                     text-align: center;
                     font-style: italic;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
+                @media(min-width: 480px) {
+                    .contact-container p {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                @media(min-width: 768px) {
+                    .contact-container p {
+                        width: 70%;
+                    }
                 }
             `}</style>
         </section>

@@ -63,7 +63,7 @@ const ContactForm = () => {
 
             <style jsx>{`
                 form {
-                    width: 70%;
+                    width: 90%;
                     margin: 20px auto 84px;
                 }
 
@@ -120,6 +120,12 @@ const ContactForm = () => {
                 button:hover {
                     cursor: pointer;
                     background-color: #006660;
+                }
+
+                @media(min-width: 768px) {
+                    form {
+                        width: 70%;
+                    }
                 }
             `}</style>
         </form>
