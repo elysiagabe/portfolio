@@ -23,6 +23,7 @@ const HeroBanner = () => {
 
             <style jsx>{`
                 .yellow {
+                    display: none;
                     position: absolute;
                     right: 0vw;
                     top: -20px;
@@ -39,6 +40,7 @@ const HeroBanner = () => {
         
                 .hero-content {
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
                     justify-content: space-around;
                     padding: 28px 2.5%;
@@ -47,7 +49,7 @@ const HeroBanner = () => {
                 }
         
                 .hero-image {
-                    width: 45%;
+                    width: 60%;
                     z-index: 5;
                 }
 
@@ -56,19 +58,22 @@ const HeroBanner = () => {
                 }
                 
                 .hero-blurb {
-                    width: 45%;
+                    width: 80%;
                     font-size: 1.8rem;
-                    padding-left: 48px;
                     z-index: 10;
                     line-height: 1.6;
                 }
 
                 .hero-blurb h1 {
-                    font-size: 4.8rem;
+                    font-size: 3.2rem;
                     font-family: 'Crimson Text', serif;
                     color: #00857D;
                     margin: 0;
                     padding: 0;
+                }
+
+                .hero-blurb p {
+                    font-size: 1.6rem;
                 }
 
                 .hero-button {
@@ -101,6 +106,35 @@ const HeroBanner = () => {
                     animation-iteration-count: 1;
                 }
 
+                @media(min-width: 768px) {
+                    .yellow {
+                        display: block;
+                    }
+                }
+
+                @media(min-width: 600px) {
+                    .hero-content {
+                        flex-direction: row;
+                    }
+
+                    .hero-blurb {
+                        width: 45%;
+                    }
+
+                    .hero-blurb h1 {
+                        font-size: 4.8rem;
+                    }
+
+                    .hero-blurb p {
+                        font-size: 1.8rem;
+                    }
+
+                    .hero-image {
+                        display: block;
+                        width: 45%;
+                    }
+                }
+
                 @keyframes swing {
                     20% {
                     transform: translateX(3px);
@@ -117,6 +151,8 @@ const HeroBanner = () => {
                     100% {
                     transform: translateX(0);
                 }
+
+
             `}</style>
         </section>
     )
