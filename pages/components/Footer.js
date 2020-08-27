@@ -97,12 +97,14 @@ const Footer = () => {
                 }
 
                 @media(min-width: 378px) {
-                    .footer {
-                        padding: 80px 64px 20px;
-                    }
-
                     .info {
                         font-size: 1.4rem;
+                    }
+                }
+
+                @media(min-width: 768px) {
+                    footer {
+                        padding: 80px 64px 20px;
                     }
                 }
             `}</style>

@@ -5,7 +5,19 @@ const Projects = () => {
     return (
         <section className="project-container" id="projects">
             <h2>Recent Work</h2>
-            <ProjectCard />
+            {projectInfo.map(p => (
+                <ProjectCard 
+                    key={p.id}
+                    id={p.id}
+                    name={p.projectName}
+                    tech={p.tech}
+                    desc={p.projectDesc}
+                    summary={p.summary}
+                    img={p.img}
+                    links={p.links}
+                />
+            ))}
+            {/* <ProjectCard /> */}
             <style jsx>{`
                 .project-container {
                     max-width: 1400px;

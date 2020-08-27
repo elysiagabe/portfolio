@@ -1,22 +1,46 @@
-import projectInfo from '../../../data/projectInfo';
+// import projectInfo from '../../../data/projectInfo';
 
-const ProjectCard = () => {
+const ProjectCard = ({ id, name, tech, desc, summary, img, links}) => {
+    console.log(links)
+    // console.log("props: ", props)
+    // set state isEven? 
+    // const order
+    const setOrder = (id) => {
+        if (id % 2 === 0) {
+            return 5
+        } else {
+            return -5
+        }
+    }
+
+
     return (
         <section className="project-card">
-            <img src="/myschool_mockup.png" />
-            <div>
-                <h3>MySchool</h3>
+            {/* <img src="/myschool_mockup.png" /> */}
+            <img src={img} style={{order: setOrder(id)}} />
+            {/* <div>image here</div> */}
+            <div className="project-info">
+                {/* project info here */}
+                <h3>{name}</h3>
                 
                 <ul>
-                {projectInfo[0].tech.map(t => {
+                {tech.map(t => {
                     return (
                     <li className="tech" key={t}>{t}</li>
                     )
                 })}
                 </ul>
 
-                <p className="description">{projectInfo[0].projectDesc}</p>
-                <p>{projectInfo[0].summary}</p>
+                <p className="description">{desc}</p>
+                <p>{summary}</p>
+
+                {links.map(link => (
+                    <div className="project-link">
+                        <img src="/black_arrow.png" />
+                        <a href={link.url}>{link.preview}</a>
+                    </div>
+                ))}
+
             </div>
             <style>{`
                 h3 {
@@ -27,17 +51,24 @@ const ProjectCard = () => {
 
                 .project-card {
                     display: flex;
-                    justify-content: space-evenly;
                     align-items: center;
                     font-size: 1.6rem;
+                    width: 70%;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                    // border: 1px solid blue;
                 }
 
                 .project-card img {
-                    width: 45%;
+                    width: 50%;
+                    // padding: 8px;
+                    // border: 1px solid magenta;
                 }
 
-                .project-card div {
-                    width: 40%;
+                .project-info {
+                    width:  50%;
+                    padding: 0 32px 0 32px;
+                    // border: 1px solid orange;
                 }
 
                 .project-card ul {
@@ -60,6 +91,22 @@ const ProjectCard = () => {
 
                 .description {
                     font-style: italic;
+                }
+
+                .project-link {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 8px
+                    
+                }
+
+                .project-link img {
+                    width: 28px;
+                    margin-right: 16px;
+                }
+
+                .project-link a {
+                    text-decoration: none;
                 }
             `}</style>
         </section>

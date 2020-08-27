@@ -28,7 +28,7 @@ export default function Home() {
         <TopNav />
         <HeroBanner />
 
-        {/* PROJECTS: MySchool, Sunsama blog, Replate landing page, something else... */}
+        {/* PROJECTS: MySchool, Sunsama blog, Replate landing page, Conway's Game of Life, something else... */}
         <Projects />
 
         {/* ABOUT: Background, Skills, Resume, Non-work stuff*/}
