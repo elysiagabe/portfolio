@@ -25,7 +25,7 @@ const HeroBanner = () => {
                 .yellow {
                     display: none;
                     position: absolute;
-                    right: 0vw;
+                    right: -3vw;
                     top: -20px;
                     z-index: 0;
                 }
