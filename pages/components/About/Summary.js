@@ -31,6 +31,12 @@ const Summary = () => {
                     margin-bottom: 56px;
                 }
 
+                .about-summary h3 {
+                    font-size: 3.6rem;
+                    color: #00857D;
+                    margin-bottom: 16px;
+                }
+
                 .about-summary p {
                     font-size: 1.8rem;
                 }

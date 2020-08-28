@@ -1,48 +1,54 @@
-// import projectInfo from '../../../data/projectInfo';
+import ReactGA from 'react-ga'
 
-const ProjectCard = ({ id, name, tech, desc, summary, img, links}) => {
-    console.log(links)
-    // console.log("props: ", props)
-    // set state isEven? 
-    // const order
-    const setOrder = (id) => {
+const ProjectCard = ({ projId, name, tech, desc, summary, img, links }) => {
+
+
+    const updateOrder = id => {
         if (id % 2 === 0) {
-            return 5
-        } else {
-            return -5
-        }
+            return "right-col"
+        } 
     }
-
 
     return (
         <section className="project-card">
-            {/* <img src="/myschool_mockup.png" /> */}
-            <img src={img} style={{order: setOrder(id)}} />
-            {/* <div>image here</div> */}
+            <img 
+                src={img} 
+                alt={`Screenshot of ${name} project`}
+                id={updateOrder(projId)}
+            />
+  
             <div className="project-info">
                 {/* project info here */}
                 <h3>{name}</h3>
                 
                 <ul>
-                {tech.map(t => {
+                {tech ? tech.map(t => {
                     return (
                     <li className="tech" key={t}>{t}</li>
                     )
-                })}
+                }) : null}
                 </ul>
 
                 <p className="description">{desc}</p>
                 <p>{summary}</p>
 
-                {links.map(link => (
-                    <div className="project-link">
-                        <img src="/black_arrow.png" />
-                        <a href={link.url}>{link.preview}</a>
+                {links ? links.map(link => (
+                    <div key={link.url} className="project-link">
+                        <img id="arrow" src="/black_arrow.png" />
+                        <ReactGA.OutboundLink
+                            eventLabel={`Clicked ${link.url}`}
+                            to={link.url}
+                            target="_blank"
+                            trackerNames={['ProjectLinks']}
+                            id="link"
+                        >
+                            {link.preview}
+                        </ReactGA.OutboundLink>
                     </div>
-                ))}
+                )): null}
 
             </div>
-            <style>{`
+            <style jsx>{`
                 h3 {
                     font-size: 3.6rem;
                     color: #00857D;
@@ -51,24 +57,21 @@ const ProjectCard = ({ id, name, tech, desc, summary, img, links}) => {
 
                 .project-card {
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
                     font-size: 1.6rem;
-                    width: 70%;
+                    width: 90%;
                     margin: 0 auto;
                     margin-bottom: 20px;
-                    // border: 1px solid blue;
                 }
 
                 .project-card img {
-                    width: 50%;
-                    // padding: 8px;
-                    // border: 1px solid magenta;
+                    width: 100%;
                 }
 
                 .project-info {
-                    width:  50%;
+                    width:  100%;
                     padding: 0 32px 0 32px;
-                    // border: 1px solid orange;
                 }
 
                 .project-card ul {
@@ -96,17 +99,33 @@ const ProjectCard = ({ id, name, tech, desc, summary, img, links}) => {
                 .project-link {
                     display: flex;
                     align-items: center;
-                    margin-bottom: 8px
-                    
+                    margin-bottom: 8px;
                 }
 
-                .project-link img {
+                #arrow {
                     width: 28px;
                     margin-right: 16px;
                 }
 
-                .project-link a {
-                    text-decoration: none;
+                @media(min-width: 768px) {
+                    .project-card {
+                        width: 70%;
+                    }
+                }
+
+                @media(min-width: 1024px) {
+                    .project-card {
+                        flex-direction: row;
+                    }
+
+                    .project-card img, 
+                    .project-info {
+                        width: 50%;
+                    }
+
+                    #right-col {
+                        order: 100;
+                    }
                 }
             `}</style>
         </section>

@@ -8,7 +8,7 @@ const Projects = () => {
             {projectInfo.map(p => (
                 <ProjectCard 
                     key={p.id}
-                    id={p.id}
+                    projId={p.id}
                     name={p.projectName}
                     tech={p.tech}
                     desc={p.projectDesc}

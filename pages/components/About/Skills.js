@@ -31,7 +31,10 @@ const Skills = () => {
                 .skills h3 {
                     text-align: center;
                     margin: 0;
-                    font-size: 2.4rem;
+                    font-size: 2.2rem;
+                    letter-spacing: 1px;
+                    color: #00857D;
+                    text-transform: uppercase;
                 }
 
                 .skills p {
