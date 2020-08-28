@@ -1,8 +1,7 @@
 import ReactGA from 'react-ga'
 
 const ProjectCard = ({ projId, name, tech, desc, summary, img, links }) => {
-
-
+    // Used to set order of image for every other project on larger screens
     const updateOrder = id => {
         if (id % 2 === 0) {
             return "right-col"
@@ -18,7 +17,6 @@ const ProjectCard = ({ projId, name, tech, desc, summary, img, links }) => {
             />
   
             <div className="project-info">
-                {/* project info here */}
                 <h3>{name}</h3>
                 
                 <ul>
@@ -36,11 +34,11 @@ const ProjectCard = ({ projId, name, tech, desc, summary, img, links }) => {
                     <div key={link.url} className="project-link">
                         <img id="arrow" src="/black_arrow.png" />
                         <ReactGA.OutboundLink
+                            style={{textDecoration: 'none', color: '#333'}}
                             eventLabel={`Clicked ${link.url}`}
                             to={link.url}
                             target="_blank"
                             trackerNames={['ProjectLinks']}
-                            id="link"
                         >
                             {link.preview}
                         </ReactGA.OutboundLink>

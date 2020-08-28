@@ -17,12 +17,10 @@ const Projects = () => {
                     links={p.links}
                 />
             ))}
-            {/* <ProjectCard /> */}
             <style jsx>{`
                 .project-container {
                     max-width: 1400px;
                     margin: 200px auto 0;
-                    // border: 1px solid pink;
                 }
 
                 .project-container h2 {
@@ -30,7 +28,6 @@ const Projects = () => {
                     text-align: center;
                     font-weight: 400;
                 }
-
             `}</style>
         </section>
     )

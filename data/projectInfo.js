@@ -27,7 +27,7 @@ export default [
     {
         id: 3,
         projectName: "Conway's Game of Life",
-        tech: ["React", "Styled Components"],
+        tech: ["React", "Vercel", "Styled Components"],
         projectDesc: "Implementation of the classic computer science game",
         summary: "Created an interactive simulation based on the rules of Conway’s Game of Life. Wrote an efficient algorithm to generate new generations of cells correctly. Implemented additional features to allow the user to customize the simulation. ",
         img: "/conway_mockup.png",

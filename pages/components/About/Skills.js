@@ -47,19 +47,13 @@ const Skills = () => {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    // border: 1px solid red;
                     margin: 0 auto;
-                    // width: 70%;
                     width: 90%;
                 }
 
                 .skill-column {
                     font-size: 1.4rem;
                     width: 48%;
-                    // width: 25%;
-                    // border: 1px solid lavender;
-                    // padding: 0 28px 28px;
-                    // padding: 0 28px;
                 }
 
                 .skill-column-header {
@@ -67,7 +61,6 @@ const Skills = () => {
                     flex-direction: column;
                     justify-content: flex-end;
                     height: 100px;
-                    // border: 1px solid magenta;
                 }
 
                 .skill-column-header h4 {
@@ -75,7 +68,6 @@ const Skills = () => {
                     font-weight: normal;
                     margin-bottom: 12px;
                     font-size: 1.6rem;
-                    // border: 1px solid orange;
                 }
 
                 .skill-column ul {
@@ -91,8 +83,6 @@ const Skills = () => {
                     margin-bottom: 20px;
                     background: #333;
                 }
-
-
 
                 @media(min-width: 645px) {
                     .skill-column {

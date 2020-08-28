@@ -23,6 +23,10 @@ const ContactForm = () => {
                 })
             } else {
                 setStatus("ERROR")
+                ReactGA.event({
+                    category: 'Error',
+                    action: 'Error Submitting Contact Form'
+                })
             }
         }
         xhr.send(data);

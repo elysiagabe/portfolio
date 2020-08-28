@@ -28,23 +28,14 @@ export default function Home() {
         <TopNav />
         <HeroBanner />
 
-        {/* PROJECTS: MySchool, Sunsama blog, Replate landing page, Conway's Game of Life, something else... */}
         <Projects />
-
-        {/* ABOUT: Background, Skills, Resume, Non-work stuff*/}
         <About />
-
-        {/* CONTACT: Email, GitHub, LinkedIn, Contact Form */}
-        <Contact />
-        
+        <Contact />      
       </main>
 
       <Footer />
 
       <style jsx>{`
-
-
-
 
         footer {
           width: 100%;
@@ -64,8 +55,6 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
-
- 
 
         .logo {
           height: 1em;
