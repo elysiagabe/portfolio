@@ -41,7 +41,7 @@ const Footer = () => {
                     font-size: 1.2rem;
                     text-align: center;
                     width: 100vw;
-                    background-image: url("/footer_wave.png");
+                    background-image: url("/footer_wave_compressed.png");
                     height: 270px;
                     padding: 80px 20px 20px;
                 }
