@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import PortfolioPreview from '../public/portfolioPreview.png'
 
 export default function Home() {
   // Google Analytics
@@ -22,6 +23,10 @@ export default function Home() {
         <link rel="icon" href="/EG_favicon.png" />
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet"></link>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:type" content="website" />
+        <meta name="title" property="og:title" content="Elysia Gabe | Portfolio" />
+        <meta name="description" property="og:description" content="Full-stack web developer specializing in beautiful, user-focused &amp; accessible web apps" />
+        <meta name="image" property="og:image" content={PortfolioPreview} />
       </Head>
 
       <main>
