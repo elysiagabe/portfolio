@@ -28,7 +28,14 @@ const ProjectCard = ({ projId, name, tech, desc, summary, img, links }) => {
                 </ul>
 
                 <p className="description">{desc}</p>
-                <p>{summary}</p>
+
+                <div className="summary">
+                    <ul>
+                        {summary ? summary.map(s => (
+                            <li key={s}>{s}</li>
+                        )) : null}
+                    </ul>
+                </div>
 
                 {links ? links.map(link => (
                     <div key={link.url} className="project-link">
@@ -94,9 +101,19 @@ const ProjectCard = ({ projId, name, tech, desc, summary, img, links }) => {
                     font-style: italic;
                 }
 
+                .summary {
+                    margin-bottom: 16px;
+                }
+
+                .summary li {
+                    list-style-type: disc;
+                    margin: 8px 0 8px 20px;
+                }
+
                 .project-link {
                     display: flex;
                     align-items: center;
+                    margin-top: 12px;
                     margin-bottom: 8px;
                 }
 
