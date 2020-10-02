@@ -16,7 +16,7 @@ const Summary = () => {
                 <br/>
                 I have experience building out and deploying production-ready apps using React, JavaScript, HTML, CSS, Node.js and Express and jump at the opportunity to learn new languages, frameworks and skills. I also have a strong foundation in UX/UI design and product management and enjoy learning more in my free time.<br />
                 <br/>
-                I’m currently enrolled in Lambda School’s Web Development &amp; Software Engineering program, which provides an immersive and hands-on curriculum and prepares students for employment by utilizing agile development methodologies, Git workflows and industry standard platforms.<br />
+                I recently graduated from Lambda School’s Web Development &amp; Software Engineering program, which provides an immersive and hands-on curriculum and prepares students for employment by utilizing agile development methodologies, Git workflows and industry standard platforms.<br />
                 <br/>
                 Before picking up coding, I earned a degree in Psychology from Lewis &amp; Clark College, honed my coffee-slinging skills at a cafe in Portland, and worked at nonprofits in a variety of roles. With a background in the social impact sector, I’m particularly interested in how technology can be leveraged to build a better world.<br />
                 <br/>
